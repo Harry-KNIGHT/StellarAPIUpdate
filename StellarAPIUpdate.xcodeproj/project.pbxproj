@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3C2E52212939FD76009C495F /* ArticleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2E52202939FD76009C495F /* ArticleAPI.swift */; };
+		3C2E5223293A0D1D009C495F /* UrlSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2E5222293A0D1D009C495F /* UrlSession.swift */; };
 		3C7DBEE729374AF400422CC2 /* StellarAPIUpdateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7DBEE629374AF400422CC2 /* StellarAPIUpdateApp.swift */; };
 		3C7DBEE929374AF400422CC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7DBEE829374AF400422CC2 /* ContentView.swift */; };
 		3C7DBEEB29374AF500422CC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7DBEEA29374AF500422CC2 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		3C2E52202939FD76009C495F /* ArticleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleAPI.swift; sourceTree = "<group>"; };
+		3C2E5222293A0D1D009C495F /* UrlSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlSession.swift; sourceTree = "<group>"; };
 		3C7DBEE329374AF400422CC2 /* StellarAPIUpdate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StellarAPIUpdate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7DBEE629374AF400422CC2 /* StellarAPIUpdateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StellarAPIUpdateApp.swift; sourceTree = "<group>"; };
 		3C7DBEE829374AF400422CC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C2E5224293A0D55009C495F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3C2E5222293A0D1D009C495F /* UrlSession.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3C2E5225293A0D61009C495F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C7DBEF629374B2700422CC2 /* ArticleModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C2E5226293A0D6D009C495F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3C7DBEF429374B0B00422CC2 /* ApiViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3C2E5227293A0D73009C495F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3C2E52202939FD76009C495F /* ArticleAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3C2E5228293A0D86009C495F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C7DBEE629374AF400422CC2 /* StellarAPIUpdateApp.swift */,
+				3C7DBEE829374AF400422CC2 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3C7DBEDA29374AF400422CC2 = {
 			isa = PBXGroup;
 			children = (
@@ -57,11 +100,11 @@
 		3C7DBEE529374AF400422CC2 /* StellarAPIUpdate */ = {
 			isa = PBXGroup;
 			children = (
-				3C7DBEE629374AF400422CC2 /* StellarAPIUpdateApp.swift */,
-				3C7DBEE829374AF400422CC2 /* ContentView.swift */,
-				3C7DBEF429374B0B00422CC2 /* ApiViewModel.swift */,
-				3C2E52202939FD76009C495F /* ArticleAPI.swift */,
-				3C7DBEF629374B2700422CC2 /* ArticleModel.swift */,
+				3C2E5228293A0D86009C495F /* Views */,
+				3C2E5226293A0D6D009C495F /* ViewModel */,
+				3C2E5227293A0D73009C495F /* API */,
+				3C2E5224293A0D55009C495F /* Extension */,
+				3C2E5225293A0D61009C495F /* Model */,
 				3C7DBEEA29374AF500422CC2 /* Assets.xcassets */,
 				3C7DBEEC29374AF500422CC2 /* Preview Content */,
 			);
@@ -146,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C2E5223293A0D1D009C495F /* UrlSession.swift in Sources */,
 				3C7DBEE929374AF400422CC2 /* ContentView.swift in Sources */,
 				3C7DBEF529374B0B00422CC2 /* ApiViewModel.swift in Sources */,
 				3C7DBEF729374B2700422CC2 /* ArticleModel.swift in Sources */,
